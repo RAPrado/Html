@@ -1,3 +1,9 @@
-p {
-		color : gray	;
-	}
+body{
+	background: #CCCCCC;
+}
+
+
+/*Combinação de duas tags, para poder diferenciar um <strong> sozinho, e um <strong> dentro de um <i>*/
+i strong {
+		color : red;
+}
