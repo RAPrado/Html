@@ -1,19 +1,28 @@
 <!DOCTYPE html><!-- Indica para o browse usar a última versão do html-->
 <html lang="pt-br"><!--Define a língua utlizada na página-->
-  <head>
-    <meta charset="UTF-8"><!--Define o conjunto de caracteres usado no conteúdo da página-->
-    <title>Barbearia Alura</title>
-  <head>
-  
-  <body>
-    <!--Dentro da tag h1, incluiu propriedade CSS para mudar alinhamento-->
-    <h1 style="text-align: center">Título</h1>
+	<head>
+		<meta charset="UTF-8"><!--Define o conjunto de caracteres usado no conteúdo da página-->
+		<title>Título na aba</title>
 
-    <p>Paragrafo primeiro.</p>
+		<!--CSS através de arquivo específico com formatações-->
+		<link rel="stylesheet" href="style.css">
 
-    <!--Dentro da tag paragrafo, incluiu propriedade CSS para mudar tamanho da fonte-->
-    <p style="font-size: 20px;text-align: center">Paragrafo segundo.</p>
+		<!--CSS através da tag style com formatações-->
+		<style type="text/css">
+			h1 {
+				text-align: center;
+			}
+		</style>
+	</head>
 
-    <p>Paragrafo terceiro.</p>
-  </body>
+	<body>
+		<h1>Exemplo de título</h1>
+
+		<p>Paragrafo primeiro. <b>Paragrafo primeiro.</b> Paragrafo <strong>primeiro.</strong></p>
+
+		<!--CSS inline, ou seja, diretamente na tag desejada, através do Style-->
+		<p style="font-size: 20px;text-align: center"><i>Paragrafo segundo..</i></p>
+
+		<p>Paragrafo terceiro.</p>
+	</body>
 </html>
