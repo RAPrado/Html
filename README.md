@@ -1,2 +1,2 @@
-# hmtl
+# html
 Exemplos de código html
