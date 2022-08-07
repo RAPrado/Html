@@ -7,3 +7,8 @@ body{
 i strong {
 		color : red;
 }
+
+/*Formata uma tag específica definida pelo nome do id*/
+#teste_css {
+	color : yellow;
+}
