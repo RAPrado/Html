@@ -2,7 +2,7 @@
 <html lang="pt-br"><!--Define a língua utlizada na página-->
 	<head>
 		<meta charset="UTF-8"><!--Define o conjunto de caracteres usado no conteúdo da página-->
-		<title>Título na aba</title>
+		<title>Barbearia do RAP</title>
 
 		<!--CSS através de arquivo específico com formatações-->
 		<link rel="stylesheet" href="style.css">
@@ -10,20 +10,41 @@
 		<!--CSS através da tag style com formatações-->
 		<style type="text/css">
 			h1 {
-				text-align: center;
+				padding-left: 20px;
 			}
 		</style>
 	</head>
 
 	<body>
-		<h1>Exemplo de título</h1>
+		<header>
+			<h1 c>Barbearia do RAP</h1>
+		</header>
+		<img id="banner" src="imagem.jpg">
+		<div>
+			<h2 class="titulo-centralizado">Sobre a Barbearia do RAP</h2>
 
-		<p>Paragrafo primeiro. <b>Paragrafo primeiro.</b> Paragrafo <strong>primeiro.</strong></p>
+			<p>Localizada no coração da cidade a <b>Barbearia do RAP</b> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em <strong>2019</strong>, a Barbearia do RAP já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-		<!--CSS inline, ou seja, diretamente na tag desejada, através do Style-->
-		<p style="font-size: 20px;text-align: center"><i>Paragrafo segundo..</i></p>
-		
-		<!--Define um id para a tag e assim poder fazer formatação específica para esta dentro do ccs-->
-		<p id="teste_css">Paragrafo terceiro.</p>
+			<!--CSS inline, ou seja, diretamente na tag desejada, através do Style-->
+			<p style="font-size: 20px;text-align: center"><i>Nossa missão é: <strong>"Proporcionar</strong> auto-estima e qualidade de vida aos clientes".</i></p>
+
+			<!--Define um id para a tag e assim poder fazer formatação específica para esta dentro do ccs-->
+			<p id="teste_css">Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+		</div>
+
+		<div class="beneficios">
+			<h3 class="titulo-centralizado">Benefícios</h3>
+
+			<!--Cria uma lista não ordenada-->
+			<ul>
+				<!--Cria uma classe para poder formatar usando css-->
+				<li class="itens">Atendimento</li>
+				<li class="itens">Preços</li>
+				<li class="itens">Localização</li>
+				<li class="itens">Certificados</li>
+			</ul>
+
+			<img src="beneficios.jpg" class="imagem_beneficios">
+		</div>
 	</body>
 </html>
