@@ -1,0 +1,42 @@
+body{
+	background: #CCCCCC;
+}
+
+#banner {
+	width: 100%;
+}
+
+/*Combinação de duas tags, para poder diferenciar um <strong> sozinho, e um <strong> dentro de um <i>*/
+i strong {
+		color : red;
+}
+
+.titulo-centralizado{
+	text-align: center;
+}
+
+/*Formata uma tag específica definida pelo nome do id*/
+#teste_css {
+	color : yellow;
+}
+
+/*Formata uma classe*/
+.itens {
+	font-style: italic;
+}
+
+.beneficios{
+	background: #FFFFFF;
+	padding: 20px; /*Define um espaçamento interno para todos os lados*/
+}
+
+ul{
+	display: inline-block; /*Define que o bloqueio da linha será apenas até o fim do texto*/
+	vertical-align: top;   /*Define que o alinhamento da imagem carregada após a lista, será feito pelo primeiro item da lista*/
+	width: 20%;
+	margin-right: 15%;
+}
+
+.imagem_beneficios{
+	width: 50%;
+}

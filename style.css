@@ -1,42 +1,95 @@
-body{
-	background: #CCCCCC;
+header{
+	background: #BBBBBB;
+	padding: 20px 0;
 }
 
-#banner {
-	width: 100%;
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
 }
 
-/*Combinação de duas tags, para poder diferenciar um <strong> sozinho, e um <strong> dentro de um <i>*/
-i strong {
-		color : red;
+nav{
+	position: absolute; /*Permite posicionar o conteúdo*/
+	top: 110px;
+	right: 0;
 }
 
-.titulo-centralizado{
+nav li{
+	display: inline;
+	margin: 0 0 0 15px; /*Define espaçamento à esquerda*/
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;/*Tira o sublinhado do texto, quando for link*/
+}
+
+/*Cria via evento quando posiciona o mouse sobre os objetos*/
+nav a:hover{
+	color: #995500;
+	text-decoration: underline;
+}
+
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li{
+	display: inline-block;
 	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;/*Define que o espaço em px do padding não entra na conta dos 30% do width*/
+	border: 2px solid #000000; /*Define o tamanho, tipo e cor da borda*/
+	border-radius: 10px; /*Arredonda as bordas*/
 }
 
-/*Formata uma tag específica definida pelo nome do id*/
-#teste_css {
-	color : yellow;
+/*Cria via evento quando posiciona o mouse sobre os objetos*/
+.produtos li:hover{
+	border-color: #995500;
 }
 
-/*Formata uma classe*/
-.itens {
-	font-style: italic;
+/*Cria via evento quando clica/ativa o objeto pelo mouse*/
+.produtos li:active{
+	border-color: #990000;
 }
 
-.beneficios{
-	background: #FFFFFF;
-	padding: 20px; /*Define um espaçamento interno para todos os lados*/
+/*Muda o tamanho da fonte do h2 quando passar mouse por cima*/
+.produtos li:hover h2{
+	font-size: 34px;
 }
 
-ul{
-	display: inline-block; /*Define que o bloqueio da linha será apenas até o fim do texto*/
-	vertical-align: top;   /*Define que o alinhamento da imagem carregada após a lista, será feito pelo primeiro item da lista*/
-	width: 20%;
-	margin-right: 15%;
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
 }
 
-.imagem_beneficios{
-	width: 50%;
+.produto-descricao{
+	font-size: 18px;
 }
+
+ .produto-preco{
+ 	font-size: 22px;
+ 	font-weight: bold;
+ 	margin-top: 10px;
+ }
+
+ footer{
+ 	text-align: center;
+ 	background: url("bg.jpg");
+ 	padding: 10px 0;
+ }
+
+ .copyrigth{
+ 	 color: #FFFFFF;
+ 	 font-size: 13px;
+ 	 margin: 20px 0 0;
+ }
